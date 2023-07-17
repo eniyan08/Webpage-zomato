@@ -7,3 +7,55 @@ body{
     font-family: 'Merriweather', serif; 
     background-color: #f9fafc;
 }
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.navbar_brand{
+    width: 100px;
+}
+
+.navbar_logo{
+    width: 100%;
+}
+
+.nav_item{
+    background-image: linear-gradient(
+        to right,   /* from left to right */
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+    );
+
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.nav_item:hover{   /* on hovering over the nav_item  (ie. hovering over the button ) */
+    border: 2px solid #e15d92;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .navbar{
+        justify-content: space-between;
+        padding: 10px 30px;  /* 10px towards top and bottom,   30px towards right and left */
+    }
+}
+
+@media (min-width: 1024px) {
+    .navbar_brand{
+        width: 150px;
+    }
+    .nav_item{
+        padding: 15px;
+        font-size: 20px;
+    }
+}
